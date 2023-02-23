@@ -1,9 +1,11 @@
 * {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0px;
+    background-color: #f1f3f6b9;
 }
 
 .nav {
@@ -97,8 +99,8 @@ input:focus {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    column-gap: 60px;
-    padding: 10px 0px;
+    column-gap: 3.75rem;
+    padding: 0.625rem 0rem;
 }
 
 .categories a {
@@ -109,8 +111,8 @@ input:focus {
 }
 
 .categories img {
-    height: 64px;
-    width: 64px
+    height: 4rem;
+    width: 4rem
 }
 
 .category-box {
@@ -119,36 +121,71 @@ input:focus {
 
 .containers {
     /* background-color: #f1f3f600 ; */
-    background-color: gray;
-    display: flex;
+    /* display: flex; */
     width: 100%;
-    justify-content: center;
+
+    /* justify-content: center; */
     /* height: 500px; */
 }
 
 .container {
-    margin-top: 1rem;
-    background-color: white;
-    width: 80%;
+    margin:1rem 6rem;
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+    column-gap: 1rem;
+    /* width: 87%; */
 }
 
-.container-header{
+.container-header {
     display: flex;
+    min-width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(197, 190, 190);
+    justify-content: space-between;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .container-title {
-    float: left;
+    /* float: left; */
+    column-gap: 0.625rem;
     font-weight: 700;
+    display: flex;
+    align-items: center;
 }
 
 .container-title>span {
     font-size: 1.4rem;
 }
-.container-view_all{
+
+.container-title img {
+    height: 1.625rem;
+    width: 1.625rem;
+    margin-left: 1rem;
+}
+
+.container-view_all {
+    /* float: right; */
     background-color: #2874f0;
 }
-.container-view_all>a{
+
+.container-view_all>a {
+    font-weight: 900;
+    font-size: 0.8rem;
     text-decoration: none;
-    padding: 5px 40px;
+    display: inline-block;
+    padding: 0.5rem 1.2rem;
     color: white;
+}
+
+.container-left {
+    background-color: white;
+}
+
+.container2{
+    background-color: white;
+    margin:1rem 6rem;
+    /* display: grid;
+    grid-template-columns: 7fr 1fr; */
+    column-gap: 1rem;
 }
